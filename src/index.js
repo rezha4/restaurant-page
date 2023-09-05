@@ -1,6 +1,6 @@
-import { order } from "./order";
-import { render } from "./render";
+import { renderHome } from "./home";
+import { renderNav } from "./nav";
 
-console.log("i took arrow to the knee");
+renderNav();
 
-render()
+renderHome();

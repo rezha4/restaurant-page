@@ -1,19 +1,10 @@
 const path = require('path');
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: {
-    index: "./src/index.js",
-    order: "./src/order.js",
-  },
+  entry: "./src/index.js",
   devtool: "inline-source-map",
-  plugins: [
-    new HtmlWebpackPlugin({
-        title: "The Bannered Mare",
-    }),
-  ],
   output: {
-    filename: "[name].bundle.js",
+    filename: "main.js",
     path: path.resolve(__dirname, 'dist'),
     // clean: true,
   },
