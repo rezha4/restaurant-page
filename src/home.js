@@ -1,10 +1,11 @@
-const renderPage = () => {
-    const mainContent = document.querySelector("div#content");
+import { clearNode } from "./clear";
+import { renderNav } from "./nav";
 
-    const nav = document.createElement("nav");
-    const title = document.createElement("h1");
-    title.textContent = "The Bannered Mare";
-    nav.appendChild(title);
+const renderHome = () => {
+    clearNode(document.querySelector("#content"));
+    renderNav();
+
+    const mainContent = document.querySelector("#content");
 
     const logo = document.createElement("img");
 
@@ -17,11 +18,10 @@ const renderPage = () => {
     main.appendChild(desc);
 
     const photo = document.createElement("img");
-
-    mainContent.appendChild(nav);
+    
     mainContent.appendChild(logo);
     mainContent.appendChild(main);
     mainContent.appendChild(photo);
 }
 
-export { renderPage }
+export { renderHome }

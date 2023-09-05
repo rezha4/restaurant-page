@@ -1,0 +1,64 @@
+* {
+    font-family: balgrufFont;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+h3, p {
+    padding: 1rem;
+}
+
+nav {
+    background-color: rgb(197, 173, 144);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+ul li {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: solid;
+}
+
+img {
+    height: auto;
+    width: clamp(100px, 500px, 80vw);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu {
+    margin: 1rem 0;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(3, 200px);
+}
+
+#card>img {
+    height: auto;
+    width: 150px;
+}
+
+#card {
+    border: solid;
+}

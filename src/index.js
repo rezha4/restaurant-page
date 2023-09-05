@@ -1,4 +1,6 @@
-import { renderPage } from "./render";
+import { renderHome } from "./home";
+import { renderNav } from "./nav";
 
-console.log("hello dummy page");
-renderPage();
+renderNav();
+
+renderHome();
