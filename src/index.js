@@ -1,4 +1,6 @@
-import { renderPage } from "./render";
+import { order } from "./order";
+import { render } from "./render";
 
-console.log("hello dummy page");
-renderPage();
+console.log("i took arrow to the knee");
+
+render()
